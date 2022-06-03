@@ -5,7 +5,7 @@
  *
  * Description: print the required results
  *
- * Return: integer value 0
+ * Return: return integer value 0
  *
  */
 int main(void)
@@ -16,7 +16,7 @@ int main(void)
 	{
 		if (ch != 'e' && ch != 'q')
 		{
-			printf("%d", ch);
+			putchar(ch);
 		}
 	}
 	putchar('\n');
