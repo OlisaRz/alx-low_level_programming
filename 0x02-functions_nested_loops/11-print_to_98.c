@@ -27,6 +27,9 @@ void print_to_98(int n)
 
 		while (b >= 98)
 		{
+			printf("%d", b);
+			if (b == 98)
+				break;
 			printf("%c", ',');
 			printf("%c", ' ');
 			b--;
