@@ -6,26 +6,28 @@
  */
 int main(void)
 {
-	int no;
+	int i;
 
-	for (no = 1; no <= 100; no++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (no % 3 == 0 && no % 5 == 0)
+		if (i % 3 == 0 && i % 5 != 0)
 		{
-			printf("%s", "FizzBuzz");
-		} else if (no % 3 == 0)
+			printf(" Fizz");
+		} else if (i % 5 == 0 && i % 3 != 0)
 		{
-			printf("%s", "Fizz");
-		} else if (no % 5 == 0)
+			printf(" Buzz");
+		} else if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("%s", "Buzz");
+			printf(" FizzBuzz");
+		} else if (i == 1)
+		{
+			printf("%d", i);
 		} else
 		{
-			printf("%d ", no);
+			printf("%d", i);
 		}
-		if (no < 100)
-			printf("%c", ' ');
 	}
-	printf("%c", '\n');
+	printf("\n");
+
 	return (0);
 }
