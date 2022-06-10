@@ -12,13 +12,13 @@ int main(void)
 	{
 		if (no % 3 == 0 && no % 5 == 0)
 		{
-			printf("%s", "FIZZBUZZ");
+			printf("%s", "FizzBuzz");
 		} else if (no % 3 == 0)
 		{
-			printf("%s", "FIZZ");
+			printf("%s", "Fizz");
 		} else if (no % 5 == 0)
 		{
-			printf("%s", "BUZZ");
+			printf("%s", "Buzz");
 		} else
 		{
 			printf("%d ", no);
