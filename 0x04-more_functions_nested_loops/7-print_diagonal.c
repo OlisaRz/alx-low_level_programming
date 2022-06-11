@@ -1,35 +1,28 @@
 #include "main.h"
 /**
- * print_diagonal - print out diagonal shape
- * @n: argument for the function
- *
+ * print_diagonal - draw a diagonal line
+ * @n: number of times the character \ should appear
  * Description: print out the required result
- *
- * Return: return void
- *
  */
 void print_diagonal(int n)
 {
-	int i = 0;
-	int j = 0;
-
-	if (n > 0)
+	if (n <= 0)
 	{
+		_putchar('\n');
+	} else
+	{
+		int i, j;
+
 		for (i = 0; i < n; i++)
 		{
 			for (j = 0; j < n; j++)
 			{
-				if (i == j)
-				{
+				if (j == i)
 					_putchar('\\');
-				} else
-				{
+				else if (j < i)
 					_putchar(' ');
-				}
 			}
 			_putchar('\n');
 		}
-		_putchar('\n');
-	} else if (n <= 0)
-		_putchar('\n');
+	}
 }
