@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strcpy - update value.
- * @dest: value to be valuated.
- * @src: value to be evaluated.
+ * @dest: value to be valuate.
+ * @src: value to be evaluate.
  * Return: not
  */
 char *_strcpy(char *dest, char *src)
