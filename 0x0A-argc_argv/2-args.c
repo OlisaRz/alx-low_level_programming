@@ -4,7 +4,7 @@
  * main - program that multiplies two numbers.
  * @argc: argument counter for integer
  * @argv: vector to arguments
- * Return: return 0 if successful and error if not
+ * Return: return 0
  */
 
 int main(int argc, char **argv)
