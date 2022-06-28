@@ -13,6 +13,9 @@ char *str_concat(char *s1, char *s2)
 {
 	int i, j;
 	char *ptr = NULL;
+	/**
+	 * checking NULL string for s1 and s2
+	 */
 	if(s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
