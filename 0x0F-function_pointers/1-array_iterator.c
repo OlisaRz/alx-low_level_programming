@@ -1,24 +1,21 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include "function_pointers.h"
+
 /**
- * int_index - gets first index for a given condition
- * @array: first argument
- * @size: size of the array
- * @cmp: perform the condition check on array
- *
- * Description: return the required result
- *
- * Return: return integr value
+ * array_iterator - Executes a function given as a
+ * parameter on the array elements
+ * array: The array.
+ * @size: The size of the array.
+ * @action: A pointer to the function to be executed
  */
-int int_index(int *array, int size, int (*cmp)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
-	
-	if (array == NULL || cmp == NULL || size <= 0)
-		return (-1);
-	for (i = 0; i < size; i++)
+	if (array == NULL || action == NULL)
+		return;
+
+	while (size-- > 0)
 	{
-		if (cmp(array[i]) != 0)
-			return (i);
+		action(*array);
+		array++;
 	}
-	return (-1);
 }
