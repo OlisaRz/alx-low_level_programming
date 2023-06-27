@@ -2,9 +2,8 @@
 #include "main.h"
 /**
  * _strcpy - copies string pointed to by src,
- * plus the terminating null byt (\0),
- * to buffer pointed to by dest.
- * @dest: value to be valuate.
+ * plus the terminating null byte (\0),
+ * @dest: value to be evaluate.
  * @src: value to be evaluate.
  * Return: dest, a char *.
  */
